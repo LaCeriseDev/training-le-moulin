@@ -3,17 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 
 :root {
-    --light-color: hsl(0, 0%, 30%);
     --text-color-main: #000;
-    --text-color-footer: #353535;
+    --text-color-footer: #6b6b6b;
+    --light-color: hsl(0, 0%, 50%);
 }
 
 body { margin: 0; overflow-x: hidden;}
 h1,h2,h3,p,a { font-family: 'Mitr', sans-serif; }
 .section--about-product .article__subtitle { font-family: 'Smooch', cursive; }
-title {
-    color: red;
-}
+
 .button { 
     padding: 10px;
     width: 100px;
@@ -53,7 +51,7 @@ main { margin: auto; width: 1920px; color: var(--text-color-main);}
     gap: 40px;
 }
 
-.card .card__image { width: 300px; height: 300px; }
+.card .card__image { height: 300px; }
 .card .card__title { text-align: center; font-size: 1.4em; font-weight: 300;}
 
 .section--about-product { display: flex; flex-flow: column nowrap; }
@@ -75,20 +73,19 @@ main { margin: auto; width: 1920px; color: var(--text-color-main);}
 .article--product section {
     display: flex;
     flex-flow: column;
-    width: 600px; 
-    height: 700px;
+    width: 600px;
 }
 
 .article--about section .article__title,
-.article--product section .article__title { order: 2; line-height: 1em; margin: 0 0 40px 0;}
+.article--product section .article__title { order: 2; line-height: 1em; margin-bottom:40px;}
 .article--about section .article__subtitle,
-.article--product section .article__subtitle { order: 1; line-height: 1em; font-size: 2em; margin: 100px 0 0 0;}
+.article--product section .article__subtitle { order: 1; line-height: 1em; font-size: 2em; margin-top: 100px;}
 .article--about section .article__text,
-.article--product section .article__text { order: 3; width: 500px; }
+.article--product section .article__text { order: 3; width: 500px; margin-bottom: auto;}
 .article--about section .button,
-.article--product section .button { order: 4; }
+.article--product section .button { order: 4; margin-top: auto;}
 
-.article__image { width: 600px; height: 700px; }
+.article__image { height: 500px;}
 
 .background { height: 700px; }
 .background--header { background: url("../img/background-passion-du-pain.jpg") no-repeat; }
@@ -102,7 +99,6 @@ main { margin: auto; width: 1920px; color: var(--text-color-main);}
 }
 .background--new .background__title {font-size: 15em; margin: 0 0 0 0; line-height: .9em;}
 .background--new .background__subtitle {font-size: 3em; margin: 0;}
-
 
 .footer {
     display: flex;
