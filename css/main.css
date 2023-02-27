@@ -24,7 +24,7 @@ h1,h2,h3,p,a { font-family: 'Mitr', sans-serif; }
 .button:hover { background-color: var(--light-color); }
 
 
-main { margin: auto; width: 1920px; color: var(--text-color-main);}
+main { margin: auto; width: 100%; max-width: 1920px; color: var(--text-color-main);}
 
 .header {
     display: flex;
@@ -77,9 +77,9 @@ main { margin: auto; width: 1920px; color: var(--text-color-main);}
 }
 
 .article--about section .article__title,
-.article--product section .article__title { order: 2; line-height: 1em; margin-bottom:40px;}
+.article--product section .article__title { order: 2; line-height: 1em; margin: 0 0 40px 0;}
 .article--about section .article__subtitle,
-.article--product section .article__subtitle { order: 1; line-height: 1em; font-size: 2em; margin-top: 100px;}
+.article--product section .article__subtitle { order: 1; line-height: 1em; font-size: 2em; margin: 100px 0 0 0;}
 .article--about section .article__text,
 .article--product section .article__text { order: 3; width: 500px; margin-bottom: auto;}
 .article--about section .button,
@@ -88,14 +88,14 @@ main { margin: auto; width: 1920px; color: var(--text-color-main);}
 .article__image { height: 500px;}
 
 .background { height: 700px; }
-.background--header { background: url("../img/background-passion-du-pain.jpg") no-repeat; }
-.background--boulanger { background: url("../img/background-boulanger.jpg") no-repeat; margin-bottom: 40px; }
+.background--header { background: url("../img/background-passion-du-pain.jpg") no-repeat center; }
+.background--boulanger { background: url("../img/background-boulanger.jpg") no-repeat center; margin-bottom: 40px; }
 .background--new {
     display: flex;
     flex-flow: column-reverse nowrap;
     align-items: center;
     justify-content: center;
-    background: url("../img/background-nouveaute.jpg") no-repeat;
+    background: url("../img/background-nouveaute.jpg") no-repeat center;
 }
 .background--new .background__title {font-size: 15em; margin: 0 0 0 0; line-height: .9em;}
 .background--new .background__subtitle {font-size: 3em; margin: 0;}
