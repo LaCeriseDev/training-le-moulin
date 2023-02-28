@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- meta seo -->
+    <meta name="description" content="Le Moulin. - la passion du pain artisanal. Découvrez notre savoir-faire et nos délicieux produits faits à la main avec des ingrédients locaux et frais. Des viennoiseries croustillantes aux pains traditionnels, offrez-vous une expérience de boulangerie authentique et savoureuse chez Le Moulin.">
+
     <link rel="stylesheet" href="css/main.css">
-    <title class="test">Le Moulin.</title>
+    <title>Le Moulin. - Pain artisanal</title>
 </head>
 <body>
     <main>
-        <header class=" header background background--header">
-            <h1 class="header__title">Le Moulin.</h1>
-            <h2 class="header__subtitle">La passion du pain</h2>
+        <header class="header background background--header">
+            <h1 class="header__title background__title">Le Moulin.</h1>
+            <h2 class="header__subtitle background__subtitle">La passion du pain</h2>
         </header>
         <section class="section section--expertise">
-            <h2 class="section__title">un savoir faire artisanal</h2>
+            <span class="section__title">un savoir faire artisanal</span>
             <section class="card-list">
                 <article class="card">
                     <img class="card__image" src="img/viennoiserie.jpg" alt="viennoiserie">
@@ -33,38 +37,40 @@
         </section>
         <div class="background background--boulanger"></div>
         <section class="section section--about-product">
-             <article class="article article--about">
-                <section>
+            <article class="article article--about">
+                <div>
+                    <span class="article__subtitle">à propos</span>
                     <h2 class="article__title">La boulangerie</h2>
-                    <h3 class="article__subtitle">à propos</h3>
                     <p class="article__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et enim laboriosam temporibus rem suscipit non veniam nisi facere tempora iste hic recusandae repudiandae consectetur rerum doloribus fuga, deleniti dolore consequuntur.</p>
                     <button class="button">En savoir plus</button>
-                </section>
-                <img class="article__image" src="/img/boulanger.jpg" alt="boulanger">
+                </div>
+                <div>
+                    <img class="article__image" src="img/boulanger.jpg" alt="boulanger">
+                </div>
             </article>
             <article class="article article--product">
-                <section>
+                <div>
+                    <span class="article__subtitle">des produits</span>
                     <h2 class="article__title">Organiques</h2>
-                    <h3 class="article__subtitle">des produits</h3>
                     <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ex molestias ullam tempore reiciendis nam autem aut et accusamus eligendi nobis, unde sunt fugit. Possimus consequuntur non explicabo expedita ipsam!</p>
                     <button class="button">Shop now</button>
-                </section>
-                <img class="article__image" src="/img/organiques.jpg" alt="organiques">
+                </div>
+                <div>
+                    <img class="article__image" src="img/organiques.jpg" alt="organiques">
+                </div>
             </article>
         </section>
         <section class="background background--new">
             <h2 class="background__title">Café givré</h2>
-            <h3 class="background__subtitle">Testez notre nouveauté de l'été</h3>
+            <span class="background__subtitle">Testez notre nouveauté de l'été</span>
         </section>
     </main>
     <footer class="footer">
-        <nav>
-            <ul class="footer__nav-list">
-                <li class="footer__nav-item"><a href="http://" target="_blank" rel="noopener noreferrer"></a>Mentions légales</li>
-                <li class="footer__nav-item"><a href="http://" target="_blank" rel="noopener noreferrer"></a>Politique en matière de cookies</li>
-                <li class="footer__nav-item"><a href="http://" target="_blank" rel="noopener noreferrer"></a>Politique de confidentialité</li>
-                <li class="footer__nav-item"><a href="http://" target="_blank" rel="noopener noreferrer"></a>Condition d'utilisation</li>
-            </ul>
+        <nav class="footer__nav-list">
+            <a class="footer__nav-item" href="http://" target="_blank" rel="noopener noreferrer">Mentions légales</a>
+            <a class="footer__nav-item" href="http://" target="_blank" rel="noopener noreferrer">Politique en matière de cookies</a>
+            <a class="footer__nav-item" href="http://" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a>
+            <a class="footer__nav-item" href="http://" target="_blank" rel="noopener noreferrer">Condition d'utilisation</a>
         </nav>
     </footer>
 </body>
