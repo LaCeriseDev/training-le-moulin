@@ -3,10 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 
 :root {
+    /* size container */
+    --size-max-width: max-width: 1920px;
+    /* color map */
     --text-color-main: #000;
     --text-color-footer: #6b6b6b;
     --light-color: hsl(0, 0%, 50%);
     --gap: 3rem;
+    /* path background */
+    --background--header: url("../img/background-passion-du-pain.jpg");
+    --background--boulanger: url("../img/background-boulanger.jpg");
+    --background--new: url("../img/background-nouveaute.jpg");
 }
 
 body { margin: 0; overflow-x: hidden; }
@@ -26,7 +33,7 @@ h1,h2,h3,p,a,span { font-family: 'Mitr', sans-serif; margin-block-start:0; margi
 
 main {
     margin: auto;
-    max-width: 1920px;
+    max-width: var(--size-max-width);
     color: var(--text-color-main);
     display: flex;
     flex-flow: column nowrap;
@@ -45,9 +52,9 @@ main {
 .background__title {font-size: clamp(5rem, -0.875rem + 8.333vw, 20rem);}
 .background__subtitle {font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem); }
 
-.background--header { background-image: url("../img/background-passion-du-pain.jpg"); }
-.background--boulanger { background-image: url("../img/background-boulanger.jpg");}
-.background--new { background: url("../img/background-nouveaute.jpg"); }
+.background--header { background-image: var(--background--header); }
+.background--boulanger { background-image: var(--background--boulanger);}
+.background--new { background: var(--background--new); }
 
 .section--expertise {
     text-align: center;
