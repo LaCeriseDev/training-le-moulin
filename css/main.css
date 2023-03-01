@@ -3,17 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
 
 :root {
+    /* Default */
     /* size container */
     --size-max-width: max-width: 1920px;
     /* color map */
+    --primary-color: black;
+    --text-color-btn: white;
     --text-color-main: #000;
     --text-color-footer: #6b6b6b;
-    --light-color: hsl(0, 0%, 50%);
+    --light-color: hsl(0 0% 50%);
+    --test-color: hwb(275, 8%, 40%);
     --gap: 3rem;
     /* path background */
     --background--header: url("../img/background-passion-du-pain.jpg");
     --background--boulanger: url("../img/background-boulanger.jpg");
     --background--new: url("../img/background-nouveaute.jpg");
+
+    /* media querry */
+    --gap-media-500: .5rem;
 }
 
 body { margin: 0; overflow-x: hidden; }
@@ -25,8 +32,8 @@ h1,h2,h3,p,a,span { font-family: 'Mitr', sans-serif; margin-block-start:0; margi
     width: 8rem;
     border: none;
     font-size: clamp(.9rem, -0.1rem + 3vw, 1rem);
-    color: white;
-    background-color: black;
+    color: var(--text-color-btn);
+    background-color: var(--primary-color);
     cursor: pointer;
 }
 .button:hover { background-color: var(--light-color);}
@@ -47,7 +54,6 @@ main {
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
-    vertical-align: middle;
 }
 .background__title {font-size: clamp(5rem, -0.875rem + 8.333vw, 20rem);}
 .background__subtitle {font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem); }
@@ -75,7 +81,7 @@ main {
     gap: var(--gap);
 }
 
-.card__image { width: 100%; min-width: 140px; max-width: 100%; max-height: 100%; object-fit: cover;}
+.card__image { width: 100%; min-width: 90px; max-width: 100%; max-height: 100%; object-fit: cover;}
 .card__title { text-align: center; font-size: clamp(.8rem, -0.1rem + 2vw, 1.5rem); font-weight: 300;}
 
 .section--about-product { display: flex; flex-flow: column nowrap; gap: var(--gap); }
@@ -99,15 +105,16 @@ main {
 .article--about div,
 .article--product div { display: flex; flex-flow: column; gap: 1em;}
 
-.article__subtitle {font-size: 2em;}
-.article__text {max-width: 500px; max-height: 300px; font-size: clamp(.1rem, -0.1rem + 2vw, 1rem); font-weight: 200;}
+.article__title {font-size: clamp(1rem, -0.1rem + 2vw, 2rem);line-height: clamp(3rem, +0.1rem + 2vw, 2rem);}
+.article__subtitle {font-size: clamp(1rem, -0.1rem + 2vw, 2rem);line-height: 1em;}
+.article__text {max-width: 500px; max-height: 300px; font-size: clamp(.4rem, -0.1rem + .8vw, 1rem); font-weight: 200;}
 
 .article__image {max-width: 100%; max-height: 100%; object-fit: cover;}
 
 
 .footer {
     display: flex;
-    background-color: black;
+    background-color: var(--primary-color);
     color: var(--text-color-footer);
     justify-content: center;
     padding: 30px 0 100px 0;
