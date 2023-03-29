@@ -71,6 +71,7 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .section__title {
     font-size: clamp(1.3rem, -0.1rem + 2vw, 2rem);
 }
@@ -127,6 +128,7 @@ main {
     list-style: none;
     gap: var(--gap);
 }
+
 .footer__nav-list .footer__nav-item {
     text-decoration: none;
     cursor: pointer;
